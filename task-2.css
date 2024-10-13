@@ -1,0 +1,289 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #444; /* Slightly darker text color for better contrast */
+}
+
+/* Container */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #1d1f21; /* Darker background for hero section */
+  color: #ffffff; /* Maintain white text for contrast */
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero .profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #ff5f40; /* Add border around the profile picture */
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  color: #ff6f20; /* Lighter orange for social links */
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0 10px;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+  color: #ff5f40; /* Change color on hover */
+}
+
+.cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff5f40;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s; /* Add transform for button scale effect */
+}
+
+.cta:hover {
+  background-color: #e14f30;
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Services Section */
+.services {
+  background-color: #ffffff; /* Maintain white background for contrast */
+  padding: 60px 20px;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.service-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.service {
+  text-align: center;
+  background-color: #f9f9f9; /* Light gray background for service boxes */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s; /* Add box-shadow transition */
+}
+
+.service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.service h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #ff5f40; /* Keep the orange color for titles */
+}
+
+.service p {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+/* Stats Section */
+.stats {
+  background-color: #1d1f21; /* Darker background for stats section */
+  color: white;
+  padding: 60px 20px;
+}
+
+.stat-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 3rem;
+  color: #ff5f40; /* Keep the orange color for stats */
+}
+
+.stat p {
+  font-size: 1.2rem;
+}
+
+/* Projects Section */
+.projects {
+  background-color: #ffffff; /* Maintain white background for contrast */
+  padding: 60px 20px;
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.project {
+  text-align: center;
+  background-color: #f9f9f9; /* Light gray background for project boxes */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s; /* Add box-shadow transition */
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Footer Section */
+footer {
+  background-color: #1d1f21; /* Darker background for footer */
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer a {
+  color: #ff6f20; /* Lighter orange for footer links */
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #ff5f40; /* Change color on hover */
+}
+
+footer form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer input,
+footer textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+footer button {
+  padding: 10px 20px;
+  background-color: #ff5f40;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Add transform for button scale effect */
+}
+
+footer button:hover {
+  background-color: #e14f30;
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-grid,
+  .stat-grid {
+    flex-direction: column;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero .profile img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .cta {
+    padding: 8px 16px;
+  }
+}
+
+/* Scroll Animation */
+.in-view {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+section {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+/* Add custom color for hover effects and buttons */
+a:hover {
+  color: #ff5f40; /* Maintain the orange color for links */
+}
